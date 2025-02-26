@@ -244,6 +244,9 @@ div.page__modal {
 .form.create-password .form__checkbox label {
   width: initial;
 }
+.form.register .form__checkbox {
+  padding-left: 20px;
+}
 .form__title-two {
   font: normal normal 700 20px/1 "Alpina", sans-serif;
   color: #350062;
@@ -318,7 +321,7 @@ div.page__modal {
   width: 18px;
   height: 18px;
   margin: 0;
-  border-radius: 5px;
+  border-radius: 3px;
   transition: all 0.4s ease;
   background-position: 2px 4px;
   background-size: 10px 8px;

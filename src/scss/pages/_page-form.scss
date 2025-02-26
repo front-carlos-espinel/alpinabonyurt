@@ -46,6 +46,11 @@
       }
     }
   }
+  &.register {
+    .form__checkbox {
+      padding-left: 20px;
+    }
+  }
   &__title-two {
     font: normal normal 700 20px/1 c.$fontP1;
     color: c.$colorP6;
@@ -120,7 +125,7 @@
       width: 18px;
       height: 18px;
       margin: 0;
-      border-radius: 5px;
+      border-radius: 3px;
       transition: all 0.4s ease;
       background-position: 2px 4px;
       background-size: 10px 8px;
