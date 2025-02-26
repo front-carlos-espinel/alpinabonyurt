@@ -1,0 +1,15 @@
+// Base
+@use 'base/fonts';
+@use 'base/config';
+@use 'base/mixins';
+@use 'base/animations';
+
+// Componentes
+@use 'components/button';
+@use 'components/error';
+@use 'components/modal';
+
+// Pages
+@use 'pages/_form';
+@use 'pages/_page-slider';
+@use 'pages/_page-upload';

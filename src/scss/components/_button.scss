@@ -1,0 +1,22 @@
+@use '../base/fonts' as f;
+@use '../base/config' as c;
+
+.alpina-btn {
+  font: normal normal 600 15px/20px f.$fontP1;
+  border: none;
+  border-radius: 50px;
+  color: #fff;
+  background: c.$colorP5;
+  transition: all 0.3s ease;
+  //padding: 15px 10px;
+  padding: 15px 0;
+  width: 90%;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  &:hover {
+    background: c.$colorP9;
+    transform: scale(1.01);
+  }
+}

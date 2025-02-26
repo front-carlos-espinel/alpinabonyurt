@@ -1,0 +1,88 @@
+/** VARIABLES **/
+@use 'fonts' as f;
+
+// MEDIAQUERIES
+$mediaqueries: (
+	hover: 			"(hover: hover)",
+	ie: 			"screen and (-ms-high-contrast: active), (-ms-high-contrast: none)",
+	safari: 		"screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0)",
+	safari2: 		"not all and (min-resolution:.001dpcm)",
+	landscape:		"(orientation: landscape)",
+	portrait:		"(orientation: portrait)",
+	mobS3: 			360,
+	mobS2: 			480,
+	mobS: 			640,
+	mob: 			767,
+	tabS: 			820,
+	tab: 			991,
+	lapS3: 			1024,
+	lapS2: 			1199,
+	lapS: 			1280,
+	lap: 			1367,
+	deskS: 			1440,
+	desk: 			1560,
+	deskB: 			1680
+);
+
+
+// GENERAL CONFIG
+$widthLimit: 			1200px;
+$paddingGeneral: 		25px;
+$paddingGeneralMob: 	20px;
+
+
+// COLORS
+$black: 			#000;
+$lBlack: 			#8a7e7e;
+
+$lGray: 			#dfdfdf;
+
+$white: 			#FFF;
+
+$red: 				#FF0000;
+
+$success: 			#219c3e;
+$warning:			#d66519;
+$error: 			$red;
+$information: 		#2476ce;
+
+
+// GLOBAL FONTS
+$ftRegular:			arial, sans-serif;
+
+$fontFamily: 		$ftRegular;
+$baseFont: 			16;
+
+$inter: 'Inter';
+$fontP1: 	f.$fontP1, sans-serif;
+$fontP2: 	f.$fontP2, sans-serif;
+
+
+
+
+// Color
+$colorP1: 	#000;
+$colorP2: #6200EE;
+$colorP3: #125CF7;
+$colorP4: #9700FC;
+$colorP5: #6200EE;
+$colorP6: #350062;
+$colorP7: #03DAC5;
+$colorP8: #E00029;
+$colorP9: #3700B3;
+$colorP9:  #230040;
+
+$gris_01: #E1E3E4;
+$gris_02: #B4B7B8;
+$gris_03: #555E63;
+$height_responsive: 1280px;
+
+
+
+h1,h2,h3,h4,h5,p {
+	margin: 0;
+}
+
+body {
+	margin: 0;
+}

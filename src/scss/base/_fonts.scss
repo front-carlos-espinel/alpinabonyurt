@@ -1,0 +1,52 @@
+/** FONTS **/
+@font-face {
+  font-family: 'Alpina';
+  src:  
+  url('../fonts/Alpina/AlpinaSans-Regular_2020-03-23.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Alpina';
+  src:  
+  url('../fonts/Alpina/AlpinaSans-Light_2020-03-23.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Alpina';
+  src:  
+  url('../fonts/Alpina/AlpinaSans-Bold_2020-03-23.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Alpina';
+  src:  
+  url('../fonts/Alpina/AlpinaSans-Black_2020-03-23.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gango';
+  src:  
+  url('../fonts/gango/Gango-Black.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gango';
+  src:  
+  url('../fonts/gango/Gango-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+// Variables de fuentes
+$fontP1: "Alpina";
+$fontP2: "Gango";

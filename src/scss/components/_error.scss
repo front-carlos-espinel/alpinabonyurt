@@ -1,0 +1,12 @@
+.bacana-error{
+    color: #fff;
+    background-color: red;
+    padding: 5px 10px 2.5px;
+    font-size: 14px;
+    margin-top: -5px;
+    display: none;
+    border-radius: 0 0 5px 5px;
+    &.active{
+        display: block;
+    }
+}

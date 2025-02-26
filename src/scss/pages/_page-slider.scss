@@ -1,0 +1,165 @@
+@use '../base/config' as c;
+@use '../base/mixins' as m;
+
+.page  {
+  background: #02d9c3;
+  max-width: 430px;
+  margin: 0 auto;
+  //height: 100svh;
+  //padding: 5rem 2rem;
+  //padding: 5rem 0;
+  padding: 5rem 0 7.1rem;
+  position: relative;
+  &__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .title__one {
+    font: normal normal 900 40px/1 c.$fontP2;
+    color: c.$colorP3;
+    text-transform: uppercase;
+  }
+  .description__one {
+    font: normal normal 900 24px/30px c.$fontP2;
+    color: c.$colorP4;
+  }
+  &__description {
+    @include m.description;
+  }
+  .text__botton {
+    font: normal normal 400 15px/20px c.$fontP1;
+    color: c.$colorP6;
+    text-align: center;
+    width: 100%;
+    display: block;
+    margin-top: 22px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    a {
+      color: c.$colorP3;
+      text-decoration: underline;
+    }
+  }
+  .item__slider {
+    &__content-text {
+      position: absolute;
+      left: 2rem;
+      top: 22px;
+    }
+    &__content-img {
+      position: relative;
+      padding: 56px 0px 0px 2rem;
+      h3 {
+        font: normal normal 900 43px/1 c.$fontP2;
+        color: #1A5FED;
+        position: absolute;
+        top: 335px;
+        left: 82px;
+        // top: 295px;
+        // left: 70px;
+        transform: rotate(-40deg);
+      }
+    }
+    &__img {
+      width: 100%;
+    }
+  }
+  .img__top {
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  .img__botton {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    padding: 0; 
+    pointer-events: none;
+  }
+  .content__text {
+    position: relative;
+    margin: 0 auto;
+    &-img {
+      display: block;
+      //margin: 0 auto;
+      margin: 70px auto 0px;
+    }
+    &-title {
+      font: normal normal 500 33px/1 c.$fontP2;
+      color: c.$colorP4;
+      text-align: center;
+      margin: 34px auto;
+      max-width: 300px;
+    }
+    .box {
+      display: flex;
+      flex-direction: row;
+      gap: 15px;
+    }
+    small {
+      font: normal normal 900 100px/0.8 c.$fontP2;
+      color: c.$colorP3;
+    }
+    p {
+      font: normal normal 500 22px/27px c.$fontP2;
+      color: c.$colorP3;
+      text-align: justify;
+      margin: 0 0 15px;
+    }
+    &.step-1 {
+      max-width: 362px;
+      .box {
+        justify-content: center;
+      }
+      img {
+        position: absolute;
+        right: 10px;
+        top: 30px;
+      }
+    }
+    &.step-2 {
+      max-width: 275px;
+      .box {
+        justify-content: center;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    &.step-3 {
+      max-width: 362px;
+      .box {
+        justify-content: center;
+      }
+      img {
+        position: absolute;
+        top: 50px;
+        right: 10px;    
+      }
+    }
+  }
+  // Dost Slider
+  .swiper-pagination {
+    position: relative;
+    bottom: 0;
+    margin: 0 0 22px;
+    &-bullet {
+      opacity: 1;
+      position: relative;
+      background: transparent;
+      border: 2px solid c.$white;
+      width: 11px;
+      height: 11px;
+      transition: all 0.3s ease;
+      margin: 0 8px !important;
+      &-active {
+        background: c.$white;
+      }
+    }
+  }
+}

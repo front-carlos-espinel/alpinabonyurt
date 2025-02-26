@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+  <!-- METADATA -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title> DAMA </title>
+  <!-- STYLES -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.7/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="../dist/css/styles.css">
+
+</head>
+
+<body>  
+  <div class="page">
+    <div class="page__container">    
+      <img class="img__top" src="./img-alpina/img-top.svg" alt="">
+      <div class="swiper">
+        <div  class="swiper-wrapper">
+          <div  class="swiper-slide">
+            <div class="item__slider__content-text">
+              <h2 class="title__one">la<br>tapa con<br>BON YURT</h2>
+              <p class="description__one">TE RECOMIENDO<br>NO SALTÁRTELA.</p>
+            </div>
+            <div class="item__slider__content-img">
+              <img class="item__slider__img" src="./img-alpina/img-sku.png" alt="">
+              <h3 class="item__slider__text">GANA*</h3>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <img class="content__text-img" src="./img-alpina/img-logo.svg" alt="">
+            <h2 class="content__text-title">PARA GANAR<br>SIGUE ESTOS PASOS:</h2>
+            <div class="content__text step-1">
+              <div class="box">
+                <small>1</small>
+                <p>ENCUENTRA LAS<br>PALABRAS<br>BAJO LAS<br>TAPAS</p>
+              </div>
+              <img class="" src="./img-alpina/img-cup.svg">
+            </div>
+          </div>
+
+          <div  class="swiper-slide">
+            <img class="content__text-img" src="./img-alpina/img-logo.svg" alt="">
+            <h2 class="content__text-title">PARA GANAR<br>SIGUE ESTOS PASOS:</h2>
+            <div class="content__text step-2">
+              <div class="box">
+                <small>2</small>
+                <p>ARMA<br>LA<br>FRASE</p>
+              </div>
+              <div class="content__img">
+                <img class="" src="./img-alpina/img-two-steps.svg">
+              </div>
+            </div>
+          </div>
+
+          <div  class="swiper-slide">
+            <img class="content__text-img" src="./img-alpina/img-logo.svg" alt="">
+            <h2 class="content__text-title">PARA GANAR<br>SIGUE ESTOS PASOS:</h2>
+            <div class="content__text step-3">
+              <div class="box">
+                <small>3</small>
+                <p>SUBE LAS IMAGENES<br>DE LAS TAPAS Y<br>LOREM IPSUM<br>DOLOR SIT</p>
+              </div>
+              <img class="" src="./img-alpina/img-cel.svg">
+            </div>
+          </div>
+
+        </div>
+        <div class="swiper-pagination"></div> 
+      </div>
+      <a class="alpina-btn" href="/home">EMPEZAR</a>
+      <p  class="text__botton">¿Ya tienes una cuenta? <a href="/home">iniciar seccion</a></p>
+      <img class="img__botton" src="./img-alpina/img-botton.svg" alt="">
+    </div>
+  </div>
+
+  <div class="page">
+    <div class="page__upload">
+      <img class="img__top" src="./img-alpina/img-recorte-top.svg" alt="">
+      <div class="page__upload-container">
+        <div class="page__upload-text">
+          <small>1.</small>
+          <h1>SUBE LA FOTO DE LA TAPA</h1>
+        </div>
+        <p>Sigue estas instrucciones para que tu foto quede bien tomada, lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.</p>
+      </div>
+      <div class="page__upload__content">
+        <img class="page__upload-img" src="./img-alpina/img-tapa-full.png" alt="">
+      </div>
+      <a class="alpina-btn" href="/home">Subir foto</a>
+    </div>
+  </div>
+
+  <div class="page page__modal">
+    <!-- Modal General -->
+    <div class="modal">
+      <div class="modal__container">
+        <div class="modal__content">
+          <a class="alpina-btn" href="">Tomar una foto</a>
+          <a class="alpina-btn" href="">Subir de la galería</a>
+          <a class="alpina-btn" href="">Cancelar</a>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Success -->
+    <div class="modal__basic success">
+      <div class="modal__basic__container">
+        <div class="modal__basic__content">
+          <img class="modal__basic__img" src="./img-alpina/img-check.svg">
+          <h2 class="modal__basic__title">¡EXCELENTE!</h2>
+          <h2 class="modal__basic__description">¡Tu foto fue cargada exitosamente! Continúa el proceso para poder participar por premios.</h2>
+          <a class=" alpina-btn modal__basic__link" href="/home">Continuar</a>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Error -->
+    <div class="modal__basic error">
+      <div class="modal__basic__container">
+        <div class="modal__basic__content">
+          <img class="modal__basic__img" src="./img-alpina/img-error.svg">
+          <h2 class="modal__basic__description">Tu foto no cumple con los requisitos mínimos para participar, intenta con una nueva foto (revisa que no este borrosa y que los textos sean legibles).</h2>
+          <a class=" alpina-btn modal__basic__link" href="/home">Subir nueva foto</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page">
+    <div class="page__upload">
+      <div class="page__upload-container">
+        <div class="page__upload-text">
+          <small>2.</small>
+          <h1>SUBE LA FOTO DEL CODIGO</h1>
+        </div>
+        <p>Sigue estas instrucciones para que tu foto quede bien tomada, lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.</p>
+      </div>
+      <div class="page__upload__content">
+        <img class="page__upload-img" src="./img-alpina/img-tapa-full.png" alt="">
+      </div>
+      <a class="alpina-btn" href="/home">Subir foto</a>
+    </div>
+  </div>
+
+
+
+
+  <!-- <div class="content__slider" style="">
+    <div >
+      <div class="form">
+        <img class="form__logo" src="" alt="">
+
+        <h3>Bienvenido lorem dolor sit amet</h3>
+        <div class="form__content-links">
+          <a href=""> 1</a>
+          <a href=""> 2</a>
+          <a href=""> 3</a>
+        </div>
+
+        <form class="" action="">
+          
+
+        </form>
+
+      </div>
+
+    </div>
+  </div> -->
+
+
+  <div>
+    
+
+  </div>
+
+
+  <div class="page__form">
+    <div class="form">
+      <img class="form__logo" src="../dist/img-alpina/img-logo.svg" alt="">
+      <h3 class="form__title">Bienvenido lorem dolor sit amet</h3>
+      <p  class="form__description">Sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et</p>
+      <div class="form__content-links">
+        <a href=""> 1</a>
+        <a href=""> 2</a>
+        <a href=""> 3</a>
+      </div>
+      <div class="content__button">
+        <div class="text__botton">¿Ya tienes una cuenta?<a href="/home">iniciar seccion</a></div>
+      </div>
+    </div>
+  </div>
+  <div class="page__form">
+    <div class="form create-password">
+      <img class="form__logo" src="../dist/img-alpina/img-logo.svg" alt="">
+      <h2 class="form__title">Crea una contraseña</h2>
+      <form action="">
+        <input type="text" placeholder="Crea tu contraseña">
+        <input type="text" placeholder="Confirmar  contraseña">
+        <div class="form__checkbox">
+          <input type="checkbox">
+          <label for="">Mantener la sesión iniciada</label>
+
+        </div>
+        <input type="submit" value="CONTINUAR">
+      </form>
+      <div class="content__button">
+        <div class="text__botton">¿Ya tienes una cuenta?<a href="/home">iniciar seccion</a></div>
+      </div>
+      <!-- <div>
+        <div class="content__security">
+          <img src="../dist/img-alpina/img-security.svg" alt="">
+          <div class="content__security__content">
+            <h3>Alpina cuida tus datos</h3>
+            <p>Para nosotros la seguridad de tus datos y tu información es muy importante. Te contamos cómo Alpina cuida tus datos aquí.</p>
+          </div>
+        </div>
+      </div> -->
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+  <div class="page__form">
+    <div class="form register">
+      <h2 class="form__title-two">Ingresa tus datos</h2>
+      <form action="">
+        <div class="form__item">
+          <label for="">Nombres*</label>
+          <input type="text">
+          <label class="error">*Campos obligatorios</label>
+        </div>
+        <div class="form__item">
+          <label for="">Apellidos*</label>
+          <input type="text">
+        </div>
+        <div class="form__item">
+          <label for="">Celular*</label>
+          <input type="text">
+        </div>
+        <div class="form__item">
+          <label for="">Numero de documento*</label>
+          <input type="text">
+        </div>
+        <div class="form__checkbox">
+          <input type="checkbox">
+          <label for="">Acepto los Términos y Condiciones</label>
+        </div>
+        <div class="form__checkbox">
+          <input type="checkbox">
+          <label for="">Autorizo y declaro que soy mayor de edad, que he leído y acepto el tratamiento de mis datos personales conforme al formato de autorización disponible <a href="/home">aquí</a></label>
+        </div>
+        <input type="submit" value="REGÍSTRATE">
+      </form>
+      <!-- <div class="content__button">
+        <div class="text__botton">¿Ya tienes una cuenta?<a href="/home">iniciar seccion</a></div>
+      </div> -->
+      <div>
+        <div class="content__security">
+          <img src="../dist/img-alpina/img-security.svg" alt="">
+          <div class="content__security__content">
+            <h3>Alpina cuida tus datos</h3>
+            <p>Para nosotros la seguridad de tus datos y tu información es muy importante. Te contamos cómo Alpina cuida tus datos aquí.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="page">
+    <div class="page__form">
+      <div class="form">
+        <img class="form__logo" src="../dist/img-alpina/img-logo.svg" alt="">
+        <h3 class="form__title">Bienvenido lorem dolor sit amet</h3>
+        <p  class="form__description">Sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et</p>
+        <div class="form__content-links">
+          <a href=""> 1</a>
+          <a href=""> 2</a>
+          <a href=""> 3</a>
+        </div>
+        <div class="content__button">
+          <div class="text__botton">¿Ya tienes una cuenta?<a href="/home">iniciar seccion</a></div>
+        </div>
+      </div>
+      <img class="img__botton" src="./img-alpina/img-botton.svg" alt="">
+    </div>
+  </div> -->
+
+  <div id="app"></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.7/swiper-bundle.min.js"></script>
+  <script src="../dist/js/bundle.js"></script>
+
+
+</body></html>
