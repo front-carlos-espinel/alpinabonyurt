@@ -84,6 +84,7 @@ body {
   display: block;
   text-align: center;
   text-decoration: none;
+  cursor: pointer;
 }
 .alpina-btn:hover {
   background: #230040;
@@ -200,29 +201,27 @@ div.page__modal {
   margin: 0 auto;
 }
 
+.page__form {
+  position: relative;
+  background: #02d9c3;
+  max-width: 430px;
+  margin: 0 auto;
+  padding: 5rem 0 7.1rem;
+}
+.page__form .img__top {
+  position: absolute;
+  width: 100%;
+  top: 0;
+}
+.page__form .img__botton {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
 .form {
   position: relative;
-  padding: 4.2rem 0 7rem;
-  padding: 6.1rem 2.8rem 2rem;
-}
-.form::after {
-  content: "";
-  background: url(../5b5585ed7fc5e93ba82f.svg) center/100% 100% no-repeat;
-  width: 100%;
-  height: 200px;
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-.form::before {
-  content: "";
-  background: url(../edbe73748f0b69ca7b1c.svg);
-  height: 200px;
-  display: block;
-  position: absolute;
-  bottom: 0;
-  right: 0;
+  z-index: 9;
 }
 .form__logo {
   display: block;
@@ -237,9 +236,6 @@ div.page__modal {
   color: #350062;
   text-align: center;
   margin: 50px 0 20px;
-}
-.form.register {
-  padding: 6.1rem 2.8rem 2rem;
 }
 .form.create-password .form__checkbox {
   align-items: center;
@@ -278,32 +274,35 @@ div.page__modal {
   border-radius: 50px;
   text-align: center;
 }
-
-form {
+.form form {
   position: relative;
   display: flex;
   flex-direction: column;
   gap: 20px;
   z-index: 9;
+  width: 90%;
+  margin: 0 auto;
 }
-form .form__item {
+.form form .form__item {
   position: relative;
+  display: flex;
 }
-form .form__item label:not(.error) {
+.form form .form__item label:not(.error) {
   position: absolute;
   top: 6px;
   left: 33px;
   font: normal normal 400 12px/1 "Alpina", sans-serif;
   color: #999999;
 }
-form .form__item label.error {
+.form form .form__item label.error {
   font: normal normal 400 12px/1 "Alpina", sans-serif;
   color: #E00029;
   position: absolute;
   left: 26px;
   bottom: -16px;
 }
-form input:not([type=checkbox]):not([type=submit]) {
+.form form input:not([type=checkbox]):not([type=submit]) {
+  display: block;
   border: none;
   background: #fff;
   border-radius: 50px;
@@ -313,7 +312,7 @@ form input:not([type=checkbox]):not([type=submit]) {
   padding: 19px 33px 12px;
   font: normal normal 400 12px/1 "Alpina", sans-serif;
 }
-form input[type=checkbox] {
+.form form input[type=checkbox] {
   appearance: none;
   border: 2px solid #350062;
   width: 18px;
@@ -326,30 +325,28 @@ form input[type=checkbox] {
   background-repeat: no-repeat;
   cursor: pointer;
 }
-form input[type=checkbox]:checked {
+.form form input[type=checkbox]:checked {
   background: #fff url(../5259d11517b84a7b72ff.png);
   background-position: 2px 4px;
   background-size: 10px 8px;
   background-repeat: no-repeat;
 }
-form .form__checkbox {
+.form form .form__checkbox {
   display: flex;
   gap: 10px;
 }
-form .form__checkbox label {
+.form form .form__checkbox label {
   font: normal normal 400 12px/20px "Alpina", sans-serif;
   color: #350062;
   width: 92.5%;
 }
-form .form__checkbox a {
+.form form .form__checkbox a {
   text-decoration: underline;
   color: #350062;
   font-weight: 700;
 }
-form input[type=submit] {
-  cursor: pointer;
-  font-family: "Alpina", sans-serif;
-  font-weight: 700;
+.form form input[type=submit] {
+  width: 100%;
 }
 
 .page {
@@ -377,21 +374,6 @@ form input[type=submit] {
 .page__description {
   font: normal normal 500 33px/1 "Gango", sans-serif;
   color: #9700FC;
-}
-.page .text__botton {
-  font: normal normal 400 15px/20px "Alpina", sans-serif;
-  color: #350062;
-  text-align: center;
-  width: 100%;
-  display: block;
-  margin-top: 22px;
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-}
-.page .text__botton a {
-  color: #125CF7;
-  text-decoration: underline;
 }
 .page .item__slider__content-text {
   position: absolute;
@@ -505,6 +487,22 @@ form input[type=submit] {
 }
 .page .swiper-pagination-bullet-active {
   background: #FFF;
+}
+
+.text__botton {
+  font: normal normal 400 15px/20px "Alpina", sans-serif;
+  color: #350062;
+  text-align: center;
+  width: 100%;
+  display: block;
+  margin-top: 22px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.text__botton a {
+  color: #125CF7;
+  text-decoration: underline;
 }
 
 .page__upload {

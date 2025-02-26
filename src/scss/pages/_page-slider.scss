@@ -28,21 +28,6 @@
   &__description {
     @include m.description;
   }
-  .text__botton {
-    font: normal normal 400 15px/20px c.$fontP1;
-    color: c.$colorP6;
-    text-align: center;
-    width: 100%;
-    display: block;
-    margin-top: 22px;
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    a {
-      color: c.$colorP3;
-      text-decoration: underline;
-    }
-  }
   .item__slider {
     &__content-text {
       position: absolute;
@@ -161,5 +146,21 @@
         background: c.$white;
       }
     }
+  }
+}
+
+.text__botton {
+  font: normal normal 400 15px/20px c.$fontP1;
+  color: c.$colorP6;
+  text-align: center;
+  width: 100%;
+  display: block;
+  margin-top: 22px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  a {
+    color: c.$colorP3;
+    text-decoration: underline;
   }
 }
