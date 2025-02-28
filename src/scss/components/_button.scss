@@ -21,3 +21,96 @@
     transform: scale(1.01);
   }
 }
+
+
+.btn-email {
+  font: normal normal 400 15px/1 c.$fontP1;
+  background: c.$white;
+  padding: 15px 10px;
+  display: block;
+  width: 100%;
+  border-radius: 50px;
+  text-align: center;
+  color: c.$colorP6;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  &:hover {
+    transform: scale(1.01);
+  }
+  &::before {
+    content: '';
+    background: url("./../img-alpina/icon-email.svg");
+    width: 22px;
+    height: 22px;
+    display: block;
+  }
+}
+
+
+.btn-face {
+  font: normal normal 400 15px/20px f.$fontP1;
+  border: none;
+  border-radius: 50px;
+  color: #fff;
+  //background: c.$colorP9;
+  background: #2257ba;
+  transition: all 0.3s ease;
+  padding: 15px 0;
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  &:hover {
+    background: c.$colorP2;
+    transform: scale(1.01);
+  }
+  &::before {
+    content: '';
+    background: url("./../img-alpina/icon-facebook.svg");
+    width: 22px;
+    height: 22px;
+    display: block;
+  }
+}
+
+
+.btn-google {
+  font: normal normal 400 15px/20px f.$fontP1;
+  border: none;
+  border-radius: 50px;
+  color: #fff;
+  background: c.$colorP9;
+  transition: all 0.3s ease;
+  padding: 15px 0;
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  &:hover {
+    background: c.$colorP2;
+    transform: scale(1.01);
+  }
+  &::before {
+    content: '';
+    background: url("./../img-alpina/icon-google.svg");
+    width: 22px;
+    height: 22px;
+    display: block;
+  }
+}

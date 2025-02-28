@@ -151,13 +151,49 @@
       <h3 class="form__title">Bienvenido lorem dolor sit amet</h3>
       <p  class="form__description">Sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et</p>
       <div class="form__content-links">
-        <a href=""> 1</a>
-        <a href=""> 2</a>
-        <a href=""> 3</a>
+        <div><a class="btn-email" href="">Continuar con Email</a></div>
+        <div><a class="btn-face" href="">Continuar con Facebook</a></div>
+        <div><a class="btn-google" href="">Continuar con Google</a></div>
       </div>
       <div class="content__button">
         <div class="text__botton">¿Ya tienes una cuenta?<a href="/home">iniciar seccion</a></div>
       </div>
+    </div>
+    <img class="img__botton" src="./img-alpina/textura-botton.svg" alt="">
+  </div>
+
+
+  <div class="page__form">
+    <img class="img__top" src="./img-alpina/textura-top.svg" alt="">
+    <div class="form create-password">
+      <img class="form__logo" src="./img-alpina/img-logo.svg" alt="">
+      <h2 class="form__title">Iniciar Sesión</h2>
+      <form action="">
+        <div class="form__item">
+          <input type="text" placeholder="Email">
+        </div>
+        <div class="form__item">
+          <input type="text" placeholder="Contraseña">
+        </div>
+        <div class="form__checkbox">
+          <input type="checkbox">
+          <label for="">Mantener la sesión iniciada</label>
+        </div>
+        <input class="alpina-btn" type="submit" value="CONTINUAR">
+      </form>
+      <a class="form__link" href="">¿Olvidaste tu contraseña?</a>
+      <div class="content__button">
+        <div class="text__botton">¿Ya tienes una cuenta?<a href="/home">iniciar seccion</a></div>
+      </div>
+      <!-- <div>
+        <div class="content__security">
+          <img src="../dist/img-alpina/img-security.svg" alt="">
+          <div class="content__security__content">
+            <h3>Alpina cuida tus datos</h3>
+            <p>Para nosotros la seguridad de tus datos y tu información es muy importante. Te contamos cómo Alpina cuida tus datos aquí.</p>
+          </div>
+        </div>
+      </div> -->
     </div>
     <img class="img__botton" src="./img-alpina/textura-botton.svg" alt="">
   </div>
@@ -198,25 +234,27 @@
 
   <div class="page__form">
     <img class="img__top" src="./img-alpina/textura-top.svg" alt="">
+    <div class="alpina-loader hidden-loader">
+      <img src="./img-alpina/spinner.svg" alt="">
+    </div>
     <div class="form register">
       <h2 class="form__title-two">Ingresa tus datos</h2>
-      <form action="">
+      <form class="form__content"  action="">
         <div class="form__item">
-          <label for="">Nombres*</label>
-          <input type="text">
-          <label class="error">*Campos obligatorios</label>
+          <label for="name">Nombres*</label>
+          <input class=" isWords name field-to-validate" name="name" id="name" type="text">
         </div>
         <div class="form__item">
-          <label for="">Apellidos*</label>
-          <input type="text">
+          <label for="last_name">Apellidos*</label>
+          <input class="field-to-validate last_name isWords" name="last_name" id="last_name" type="text">
         </div>
         <div class="form__item">
-          <label for="">Celular*</label>
-          <input type="text">
+          <label for="cel">Celular*</label>
+          <input class="cel field-to-validate isNumber" name="cel" id="cel" type="text">
         </div>
         <div class="form__item">
-          <label for="">Numero de documento*</label>
-          <input type="text">
+          <label for="document_number">Numero de documento*</label>
+          <input class="field-to-validate document_number isNumber" name="document_number" id="document_number" type="text">
         </div>
         <div class="form__checkbox">
           <input type="checkbox">
@@ -226,7 +264,7 @@
           <input type="checkbox">
           <label for="">Autorizo y declaro que soy mayor de edad, que he leído y acepto el tratamiento de mis datos personales conforme al formato de autorización disponible <a href="/home">aquí</a></label>
         </div>
-        <input class="alpina-btn" type="submit" value="REGÍSTRATE">
+        <button id="form__button" type="submit" class="alpina-btn disabled">REGÍSTRATE</button>
       </form>
       <!-- <div class="content__button">
         <div class="text__botton">¿Ya tienes una cuenta?<a href="/home">iniciar seccion</a></div>
@@ -244,8 +282,22 @@
     <img class="img__botton" src="./img-alpina/textura-botton.svg" alt="">
   </div>
 
+  <div class="page__prize">
+    <div class="page__prize">
+      <h2>TUS PREMIOS</h2>
+      <P></P>
 
-  <!-- <div class="camera-container" style="display: none;">
+    </div>
+  </div>
+
+  <!-- <div class="menu">
+    <div class="menu__container">
+
+    </div>
+  </div> -->
+
+
+  <div class="camera-container" style="display: none;">
     <h2>Captura y Envío de Fotos</h2>
     <button id="cameraButton">
       <svg class="camera-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -259,11 +311,14 @@
     <img id="previewImage" alt="Vista previa de la foto">
     <button id="uploadButton">Enviar Foto</button>
     <div id="status"></div>
-  </div> -->
+  </div>
 
 
   <div id="app"></div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.7/swiper-bundle.min.js"></script>
   <script src="../dist/js/bundle.js"></script>
+  <script src="../src/js/form-conection.js"></script>
+  <script src="../src/js/form-validation.js"></script>
+  <script src="../src/js/index-form.js"></script>
 
 </body></html>

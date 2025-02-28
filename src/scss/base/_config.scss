@@ -70,7 +70,7 @@ $colorP6: #350062;
 $colorP7: #03DAC5;
 $colorP8: #E00029;
 $colorP9: #3700B3;
-$colorP9:  #230040;
+$colorP10:  #230040;
 
 $gris_01: #E1E3E4;
 $gris_02: #B4B7B8;
@@ -85,4 +85,28 @@ h1,h2,h3,h4,h5,p {
 
 body {
 	margin: 0;
+}
+
+/** STATES **/
+*.hide, .hide {
+  opacity: 0 !important;
+  pointer-events: none !important;
+  transition: all 0.3s ease;
+}
+
+*.hidden, .hidden {
+  display: none !important;
+}
+
+*.disabled, .disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.noClick {
+  pointer-events: none;
+}
+
+.noScroll {
+  overflow: hidden;
 }

@@ -47,6 +47,30 @@ body {
   margin: 0;
 }
 
+/** STATES **/
+*.hide, .hide {
+  opacity: 0 !important;
+  pointer-events: none !important;
+  transition: all 0.3s ease;
+}
+
+*.hidden, .hidden {
+  display: none !important;
+}
+
+*.disabled, .disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.noClick {
+  pointer-events: none;
+}
+
+.noScroll {
+  overflow: hidden;
+}
+
 /** MIXINS **/
 /** ANIMATIONS **/
 @keyframes rotate {
@@ -87,20 +111,108 @@ body {
   cursor: pointer;
 }
 .alpina-btn:hover {
-  background: #230040;
+  background: #3700B3;
   transform: scale(1.01);
 }
 
-.bacana-error {
-  color: #fff;
-  background-color: red;
-  padding: 5px 10px 2.5px;
-  font-size: 14px;
-  margin-top: -5px;
-  display: none;
-  border-radius: 0 0 5px 5px;
+.btn-email {
+  font: normal normal 400 15px/1 "Alpina", sans-serif;
+  background: #FFF;
+  padding: 15px 10px;
+  display: block;
+  width: 100%;
+  border-radius: 50px;
+  text-align: center;
+  color: #350062;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
 }
-.bacana-error.active {
+.btn-email:hover {
+  transform: scale(1.01);
+}
+.btn-email::before {
+  content: "";
+  background: url(../270b0558c47c602890f7.svg);
+  width: 22px;
+  height: 22px;
+  display: block;
+}
+
+.btn-face {
+  font: normal normal 400 15px/20px "Alpina";
+  border: none;
+  border-radius: 50px;
+  color: #fff;
+  background: #2257ba;
+  transition: all 0.3s ease;
+  padding: 15px 0;
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+.btn-face:hover {
+  background: #6200EE;
+  transform: scale(1.01);
+}
+.btn-face::before {
+  content: "";
+  background: url(../69bfa251d9bfdf91ecb1.svg);
+  width: 22px;
+  height: 22px;
+  display: block;
+}
+
+.btn-google {
+  font: normal normal 400 15px/20px "Alpina";
+  border: none;
+  border-radius: 50px;
+  color: #fff;
+  background: #3700B3;
+  transition: all 0.3s ease;
+  padding: 15px 0;
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+.btn-google:hover {
+  background: #6200EE;
+  transform: scale(1.01);
+}
+.btn-google::before {
+  content: "";
+  background: url(../e19f20ee77b46ade6e43.svg);
+  width: 22px;
+  height: 22px;
+  display: block;
+}
+
+.alpina-error {
+  font: normal normal 400 12px/1 "Alpina", sans-serif;
+  color: #E00029;
+  position: absolute;
+  left: 26px;
+  bottom: -16px;
+  display: none;
+}
+.alpina-error.active {
   display: block;
 }
 
@@ -187,7 +299,7 @@ div.page__modal {
 }
 .modal__basic__title {
   font: normal normal 700 16px/1 "Alpina", sans-serif;
-  color: #230040;
+  color: #3700B3;
   text-align: center;
   max-width: 310px;
   margin: 0 auto;
@@ -195,12 +307,41 @@ div.page__modal {
 .modal__basic__description {
   font: normal normal 400 16px/24px "Alpina", sans-serif;
   color: #FFF;
-  color: #230040;
+  color: #3700B3;
   text-align: center;
   max-width: 310px;
   margin: 0 auto;
 }
 
+.alpina-loader {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s ease all;
+  background: #03DAC5;
+}
+.alpina-loader img {
+  max-width: 60px;
+  animation: loader-spinner infinite 1s linear;
+}
+.alpina-loader.hidden-loader {
+  opacity: 0;
+  pointer-events: none;
+}
+
+@keyframes loader-spinner {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 .page__form {
   position: relative;
   background: #02d9c3;
@@ -254,7 +395,8 @@ div.page__modal {
   margin: 10px 0 25px;
 }
 .form__description {
-  font: normal normal 400 16px/1 "Alpina", sans-serif;
+  font: normal normal 400 16px/24px "Alpina", sans-serif;
+  color: #FFF;
   color: #350062;
   text-align: center;
   max-width: 260px;
@@ -268,14 +410,21 @@ div.page__modal {
   margin-top: 36px;
   padding: 0 2rem;
 }
-.form__content-links a {
-  font: normal normal 400 20px/1 "Gango", sans-serif;
-  background: #fff;
-  padding: 15px 10px;
-  display: block;
-  width: 100%;
-  border-radius: 50px;
+.form__content-links > div {
+  display: flex;
+}
+.form__link {
+  font: normal normal 400 15px/1 "Alpina", sans-serif;
+  color: #350062;
   text-align: center;
+  text-decoration: none;
+  width: 100%;
+  margin: 20px auto 20px;
+  display: block;
+  transition: all 0.3s ease;
+}
+.form__link:hover {
+  font-weight: 700;
 }
 .form form {
   position: relative;
@@ -296,13 +445,6 @@ div.page__modal {
   left: 33px;
   font: normal normal 400 12px/1 "Alpina", sans-serif;
   color: #999999;
-}
-.form form .form__item label.error {
-  font: normal normal 400 12px/1 "Alpina", sans-serif;
-  color: #E00029;
-  position: absolute;
-  left: 26px;
-  bottom: -16px;
 }
 .form form input:not([type=checkbox]):not([type=submit]) {
   display: block;
